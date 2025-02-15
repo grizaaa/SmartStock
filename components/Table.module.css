@@ -1,0 +1,30 @@
+.tableContainer {
+  max-height: calc(
+    95vh - 100px
+  ); /* Adjust 160px depending on other elements' height like headers or footers */
+  overflow-y: auto;
+  margin-top: 20px;
+  border: 1px solid #ddd; /* Optional: to give the table a border */
+  border-radius: 4px; /* Optional: to round the corners */
+}
+
+/* Style for the table headers to stay fixed while scrolling */
+.tableContainer thead th {
+  position: sticky;
+  top: 0;
+  background-color: #f2f2f2fd; /* Background color for the sticky header */
+  z-index: 1; /* Ensure the header stays on top */
+}
+
+/* Style adjustments for the table to look good within the container */
+.tableContainer table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.tableContainer th,
+.tableContainer td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #838383a8;
+}
